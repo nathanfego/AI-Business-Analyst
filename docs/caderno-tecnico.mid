@@ -1,0 +1,101 @@
+# Caderno Técnico — AI Business Analyst
+
+**Versão:** 0.1  
+**Etapa:** 01 — Protótipo visual  
+**Status:** Concluída parcialmente  
+**Ferramenta principal:** Replit
+
+## 1. Objetivo do projeto
+
+Desenvolver uma aplicação de inteligência comercial para pequenas empresas, utilizando processamento de dados e inteligência artificial para transformar informações de vendas em análises e recomendações.
+
+## 2. Problema que queremos resolver
+
+Pequenas empresas frequentemente possuem dados comerciais, mas não contam com ferramentas ou conhecimentos suficientes para interpretá-los e tomar decisões estratégicas.
+
+A proposta é criar um sistema que receba dados de vendas, calcule indicadores, identifique oportunidades e permita que o empresário consulte suas informações por meio de um agente de IA.
+
+## 3. O que foi desenvolvido
+
+A primeira versão contém:
+
+- Dashboard de visão geral.
+- Indicador de faturamento.
+- Quantidade de vendas.
+- Ticket médio.
+- Produto mais vendido.
+- Gráfico de evolução das vendas.
+- Distribuição de faturamento por categoria.
+- Tabela de vendas recentes.
+- Busca e filtros.
+- Seção de análise inteligente demonstrativa.
+- Interface de conversa com o futuro agente.
+
+**Importante:** os dados utilizados atualmente são fictícios.
+
+## 4. Conceitos técnicos estudados
+
+**Frontend:** camada visual da aplicação, responsável pela interação com o usuário.
+
+**Backend:** camada responsável pelo processamento, regras de negócio e comunicação entre os componentes.
+
+**Banco de dados:** estrutura responsável pelo armazenamento persistente das informações.
+
+**API:** mecanismo de comunicação entre aplicações e serviços.
+
+**LLM:** modelo de linguagem utilizado para interpretar informações e produzir respostas.
+
+**Agente de IA:** sistema que utiliza um modelo de linguagem, instruções, contexto e ferramentas para alcançar objetivos e executar tarefas.
+
+## 5. Ferramentas previstas
+
+| Ferramenta | Responsabilidade |
+|---|---|
+| Replit | Desenvolvimento da aplicação |
+| Python | Processamento dos dados |
+| OpenAI API | Inteligência artificial |
+| Supabase | Banco de dados |
+| n8n | Automação |
+| GitHub | Versionamento e documentação |
+
+## 6. Decisões técnicas
+
+1. Os cálculos financeiros deverão ser realizados pelo backend, não pelo modelo de linguagem.
+2. A IA deverá interpretar indicadores já calculados.
+3. Os dados demonstrativos deverão ser identificados como fictícios.
+4. A chave da API nunca deverá ficar exposta no frontend.
+5. O sistema deverá tratar erros e validar dados recebidos.
+6. As funcionalidades serão desenvolvidas e testadas progressivamente.
+
+## 7. Checklist da etapa
+
+- [x] Criar o protótipo visual.
+- [x] Criar os indicadores comerciais.
+- [x] Criar gráficos e tabela.
+- [x] Criar seção demonstrativa de análise inteligente.
+- [x] Criar interface do futuro assistente.
+- [ ] Inspecionar a estrutura do código.
+- [ ] Identificar as tecnologias utilizadas.
+- [ ] Compreender como os dados fictícios são gerados.
+- [ ] Implementar processamento de dados reais.
+- [ ] Criar integração com um modelo de IA.
+
+## 8. Próxima etapa
+
+**Etapa 02 — Entendendo a estrutura da aplicação.**
+
+Antes de implementar novas funcionalidades, precisamos identificar:
+
+- Linguagem de programação.
+- Framework utilizado.
+- Organização dos arquivos.
+- Componentes visuais.
+- Origem dos dados demonstrativos.
+- Funcionamento dos filtros e gráficos.
+- Pontos de integração com o backend.
+
+## 9. Critério de conclusão
+
+A etapa será considerada concluída quando for possível explicar a organização do projeto, identificar seus principais arquivos e compreender como os dados chegam à interface.
+
+**Regra do projeto:** não implementar funcionalidades sem compreender minimamente sua finalidade e seu funcionamento.

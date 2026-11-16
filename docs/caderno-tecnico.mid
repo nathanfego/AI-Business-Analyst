@@ -1,8 +1,8 @@
 # Caderno Técnico — AI Business Analyst
 
-**Versão:** 0.2  
-**Etapa atual:** 02 — Análise técnica da aplicação  
-**Status:** Análise concluída; estudo do código pendente.
+**Versão:** 0.3  
+**Etapa atual:** 03 — Fundamentos de dados e TypeScript  
+**Status:** Fundamentos estudados e primeiros exercícios práticos executados; aprofundamento e aplicação no dashboard pendentes.
 
 ## 1. Objetivo
 
@@ -42,6 +42,7 @@ A proposta é receber dados de vendas, calcular indicadores, identificar oportun
 | Tailwind CSS 4 | Estilização |
 | TanStack Query | Biblioteca disponível, ainda sem consultas no dashboard |
 | Radix UI | Componentes de interface reutilizáveis |
+| TSX | Execução direta de arquivos TypeScript durante os estudos |
 
 ## 5. Estrutura principal dos arquivos
 
@@ -51,6 +52,7 @@ A proposta é receber dados de vendas, calcular indicadores, identificar oportun
 - `src/data/mockBusinessData.ts`: dados fictícios.
 - `src/types/business.ts`: estrutura e tipos dos dados.
 - `src/index.css`: identidade visual e responsividade.
+- `src/estudos/aula3.ts`: arquivo utilizado nos exercícios práticos de manipulação de dados.
 - `package.json`: dependências e comandos.
 
 ## 6. Arquitetura atual
@@ -84,6 +86,40 @@ Não existem atualmente:
 
 **Agente de IA:** sistema que utiliza um modelo, contexto e ferramentas para executar tarefas orientadas a objetivos.
 
+### 7.1 Fundamentos de dados e TypeScript
+
+Foram estudados os seguintes conceitos:
+
+- Variáveis e tipos primitivos.
+- Strings e números.
+- Objetos e arrays.
+- Estrutura dos registros de vendas.
+- Tipos personalizados do TypeScript.
+- Diferença entre identificadores, categorias e valores.
+- Propriedades `value` e `quantity` dos registros de vendas.
+
+### 7.2 Manipulação de dados
+
+Foram realizados exercícios práticos com métodos de arrays:
+
+**`.filter()`:** utilizado para selecionar registros que atendem a uma condição.
+
+Exemplo: selecionar somente as vendas da categoria Tecnologia.
+
+**`.reduce()`:** utilizado para percorrer os registros e acumular um resultado.
+
+Exemplo: somar os valores financeiros das vendas.
+
+**Combinação de `.filter()` e `.reduce()`:** permite primeiro selecionar registros e depois calcular indicadores somente sobre os dados selecionados.
+
+### 7.3 Importação e execução de módulos
+
+Foi praticada a importação de dados de um arquivo para outro utilizando `import`.
+
+Também foi configurada a ferramenta TSX para executar arquivos TypeScript de estudo diretamente pelo terminal do Replit.
+
+Foi identificado que o alias `@` utilizado pelo projeto pode não ser reconhecido automaticamente pelo executor TSX. Nos exercícios, foi utilizado o caminho relativo entre os arquivos.
+
 ## 8. Problemas técnicos identificados
 
 1. O gráfico semanal utiliza valores separados dos registros de vendas.
@@ -106,27 +142,48 @@ Não existem atualmente:
 
 ## 10. Critérios de conclusão
 
+### Etapa 02 — Análise técnica da aplicação
+
 - [x] Protótipo visual desenvolvido.
 - [x] Tecnologias identificadas.
 - [x] Estrutura principal dos arquivos identificada.
 - [x] Arquitetura atual compreendida em nível geral.
 - [x] Limitações técnicas identificadas.
-- [ ] Estudar os arquivos principais do código.
-- [ ] Compreender os tipos de dados.
-- [ ] Compreender os registros fictícios.
-- [ ] Implementar processamento de dados reais.
 
-## 11. Próxima etapa
+### Etapa 03 — Fundamentos de dados e TypeScript
 
-**Etapa 03 — Fundamentos de dados e TypeScript.**
+- [x] Estudar os tipos de dados.
+- [x] Identificar objetos e arrays.
+- [x] Compreender a estrutura de uma venda.
+- [x] Compreender os tipos definidos em `src/types/business.ts`.
+- [x] Identificar como os registros fictícios alimentam os indicadores, em nível inicial.
+- [x] Praticar o método `.filter()`.
+- [x] Praticar o método `.reduce()`.
+- [x] Combinar filtragem e acumulação em um cálculo.
+- [x] Executar exercícios TypeScript pelo terminal utilizando TSX.
+- [ ] Aprofundar o processamento dos dados.
+- [ ] Implementar novos cálculos comerciais.
+- [ ] Aplicar os cálculos diretamente no dashboard.
+- [ ] Criar testes automatizados para os cálculos.
 
-Estudar:
-1. O que são variáveis e tipos de dados.
-2. Objetos e arrays.
-3. Como funciona a estrutura de uma venda.
-4. Como o TypeScript define os formatos dos dados.
-5. Como os registros alimentam os indicadores.
+**Observação:** os exercícios de cálculo foram realizados com os registros fictícios do projeto. Isso não representa ainda a integração com dados reais de uma empresa.
 
-**Primeiro arquivo de estudo:** `src/types/business.ts`.
+## 11. Próximas etapas
 
-**Regra do projeto:** compreender antes de implementar. Não modificar arquivos sem entender a finalidade da alteração.
+**Continuação da Etapa 03 — Manipulação e processamento de dados.**
+
+Estudar e praticar:
+
+1. Combinação de `.filter()` e `.reduce()`.
+2. Diferença entre faturamento e quantidade de produtos vendidos.
+3. Cálculo de indicadores comerciais.
+4. Organização e reutilização de funções.
+5. Tratamento de dados ausentes e listas vazias.
+6. Aplicação dos cálculos na lógica do dashboard.
+
+**Arquivos de estudo:**
+- `src/types/business.ts`
+- `src/data/mockBusinessData.ts`
+- `src/estudos/aula3.ts`
+
+**Regra do projeto:** compreender antes de implementar. Não modificar arquivos sem entender a finalidade da alteração. Registrar o que foi estudado, praticado e efetivamente implementado.
